@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Skipper",
+    "description": "Skip youtube ads with s",
+    "version": "1",
+    "icons": {
+        "16": "/images/yt-16.png",
+        "48": "/images/yt-48.png",
+        "128": "/images/yt-128.png"
+    },
+    "page_action": {
+        "defualt_icon": {
+            "16": "/images/yt-16.png",
+            "48": "/images/yt-48.png",
+            "128": "/images/yt-128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["background.js"]
+    }]
+}
